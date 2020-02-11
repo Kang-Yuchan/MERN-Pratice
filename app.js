@@ -18,8 +18,7 @@ mongoose
 	.then(() => console.log('DB Connected!'));
 
 const handleListening = () => console.log(`Listening on: http://localhost:${PORT}`);
-const handleGet = (req, res) => res.send('hello from node');
 
 //routes middleware
-app.use('/api', userRoutes);
+app.use('/', userRoutes);
 app.listen(PORT, handleListening);
