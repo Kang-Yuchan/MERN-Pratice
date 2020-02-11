@@ -1,0 +1,21 @@
+{
+	"name": "MERN-Practice",
+	"version": "1.0.0",
+	"description": "MongoDB + Express + React + Node.js Beautiful Fullstack Environment",
+	"main": "index.js",
+	"repository": "https://github.com/Kang-Yuchan/MERN-Pratice.git",
+	"author": "Kang Yuchan",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.8.4",
+		"@babel/node": "^7.8.4",
+		"@babel/preset-env": "^7.8.4",
+		"nodemon": "^2.0.2"
+	},
+	"scripts": {
+		"start": "nodemon --exec babel-node app.js"
+	}
+}
