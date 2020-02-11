@@ -2,6 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 dotenv.config();
+// import routes
+import userRoutes from './routes/user';
 
 //app
 const app = express();
@@ -18,6 +20,6 @@ mongoose
 const handleListening = () => console.log(`Listening on: http://localhost:${PORT}`);
 const handleGet = (req, res) => res.send('hello from node');
 
-//routes
-app.get('/', handleGet);
+//routes middleware
+app.use('/api', userRoutes);
 app.listen(PORT, handleListening);
